@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📘 Project Name
+“Interview assistant app”
 
-## Getting Started
+An interactive, real-time AI voice assistant. It captures voice, sends it to an AI model via VY API, and replies back via speech synthesis.
 
-First, run the development server:
+🚀 Overview
+Real-time voice input and response handling
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Uses VY Voice API for integrating AI model
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Built with HTML, Typescript, Next js
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📦 Built With
+Typescript, Next js, TailwindCss, Shadcn
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Web APIs: SpeechRecognition, AudioContext, SpeechSynthesis
 
-## Learn More
+VY Voice API (or whatever voice API tutorial uses)
 
-To learn more about Next.js, take a look at the following resources:
+🛠️ Installation & Setup
+Clone your repo:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+git clone https://github.com/AnnaBilokon/Interview-assistent-app-
+cd your-repo
+Install dependencies (if any, e.g. via npm):
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm install
+Obtain an API key (from VY or whichever voice‑AI service).
 
-## Deploy on Vercel
+Create a .env or config.js file and add:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+const API_KEY = 'YOUR_API_KEY_HERE';
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Start the project:
+
+npm start
+Or simply open index.html in your browser if it's static.
+
+🎬 Usage
+
+🧪 Examples
+
+✅ Features
+🎤 Voice capture and recognition
+
+🤖 AI response generation via API
+
+🗣️ Speech synthesis playback
+
+⚙️ Easy configuration with API key
+
+📱 Lightweight and responsive front‑end
+
+🔧 Roadmap / Future Plans
+Add alternative voices or languages (with multilingual TTS)
+
+Enable saving chat history in local storage or backend
+
+Improve UI/UX for mobile responsiveness
+
+Integrate other AI models or services
+
+Add fallback UI for browsers without speech support
+
+Contact: theanna.bilokon@gmail.com
+
+📝 License
+Distributed under the MIT License. See LICENSE.md for details.
