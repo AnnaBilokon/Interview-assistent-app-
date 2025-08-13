@@ -16,7 +16,7 @@ interface FormFieldProps<T extends FieldValues> {
   placeholder?: string;
   type?: "text" | "email" | "password" | "file";
 }
-const FormField = ({
+const FormField = <T extends FieldValues>({
   control,
   name,
   label,
@@ -29,11 +29,10 @@ const FormField = ({
       control={control}
       render={({ field }) => (
         <FormItem>
-          <FormLabel className="label">Username</FormLabel>
+          <FormLabel className="label">{label}</FormLabel>
           <FormControl>
-            <Input placeholder="shadcn" {...field} />
+            <Input className="input" placeholder={placeholder} {...field} />
           </FormControl>
-          <FormDescription>This is your public display name.</FormDescription>
           <FormMessage />
         </FormItem>
       )}
